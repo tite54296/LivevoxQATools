@@ -5,7 +5,8 @@ import org.junit.*;
 import org.openqa.selenium.*;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
- 
+import stepDefinitions.WorldBankDataSteps;
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = {"src/test/resources/features"},
@@ -15,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 public class TestRunner {
 	@AfterClass
 	public static void tearDown(){
-		WebDriver driver = stepDefinitions.worldBankDataSteps.driver;
+		WebDriver driver = WorldBankDataSteps.driver;
 		driver.quit();
 	}
 

@@ -7,7 +7,7 @@ Feature: Navigate World bank site
   Scenario: Open data page
     When I click on data on main page
     Then the World bank data page should open
-    
+
   Scenario: Open old site page
     When I click on old site on data page
     Then I should be taken to old site
